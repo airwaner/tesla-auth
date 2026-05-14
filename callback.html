@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>Tesla Auth Callback</title></head>
+<body>
+<h2>Tesla Auth — Code reçu</h2>
+<p>Copie ce code et colle-le dans le terminal :</p>
+<code id="code" style="font-size:1.2em;background:#eee;padding:10px;display:block;word-break:break-all;"></code>
+<script>
+  const p = new URLSearchParams(window.location.search);
+  document.getElementById('code').textContent = p.get('code') || 'Aucun code trouvé';
+</script>
+</body>
+</html>
